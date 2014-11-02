@@ -182,16 +182,17 @@ static smartnet_packet parse(const char *in) {
 
   if(crc_ok) {
       if(1)//VERBOSE)
-      std::cout << "CRC OK" << std::endl;
       //parse the message into readable chunks
       smartnet_packet pkt = parse(databits);
-
+          std::cout << "CRC OK" <<  << pkt.address << "," << pkt.groupflag << "," << pkt.command << std::endl;
+  
+/*
       //and throw it at the msgq
       std::ostringstream payload;
       payload.str("");
       payload << pkt.address << "," << pkt.groupflag << "," << pkt.command;
       gr::message::sptr msg = gr::message::make_from_string(std::string(payload.str()));
-      d_queue->handle(msg);
+      d_queue->handle(msg);*/
   } else if (VERBOSE) std::cout << "CRC FAILED" << std::endl;
     }
     return size;
