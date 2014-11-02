@@ -36,22 +36,28 @@ namespace gr {
   namespace smartnet {
 
     crc::sptr
-    crc::make(gr::msg_queue::sptr queue)
+ //   crc::make(gr::msg_queue::sptr queue)
+    crc::make()
+ 
     {
       return gnuradio::get_initial_sptr
-        (new crc_impl(queue));
+        (new crc_impl());
+       //(new crc_impl(queue));
+ 
     }
 
     /*
      * The private constructor
      */
-    crc_impl::crc_impl(gr::msg_queue::sptr queue)
+//    crc_impl::crc_impl(gr::msg_queue::sptr queue)
+    crc_impl::crc_impl()
+
       : gr::sync_block("crc",
               gr::io_signature::make (1, 1, sizeof (char)),
               gr::io_signature::make (0, 0, 0))
     {
       set_output_multiple(38);
-      d_queue = queue;
+      //d_queue = queue;
     }
 
     /*

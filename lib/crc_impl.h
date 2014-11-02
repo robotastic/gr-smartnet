@@ -35,7 +35,9 @@ namespace gr {
       gr::msg_queue::sptr d_queue;
 
      public:
-      crc_impl(gr::msg_queue::sptr queue);
+      crc_impl();
+  
+  //    crc_impl(gr::msg_queue::sptr queue);
       ~crc_impl();
 
       // Where all the action really happens

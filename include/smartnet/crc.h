@@ -26,7 +26,7 @@
 #include <gnuradio/block.h>
 #include <gnuradio/sync_block.h>
 #include <gnuradio/msg_queue.h>
- 
+
 namespace gr {
   namespace smartnet {
 
@@ -48,7 +48,8 @@ namespace gr {
        * class. smartnet::crc::make is the public interface for
        * creating new instances.
        */
-      static sptr make(gr::msg_queue::sptr queue);
+       static sptr make();
+   //   static sptr make(gr::msg_queue::sptr queue);
     };
 
   } // namespace smartnet
