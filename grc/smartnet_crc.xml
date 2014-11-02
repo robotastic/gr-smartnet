@@ -3,7 +3,7 @@
   <key>smartnet_crc</key>
   <category>SMARTNET</category>
   <import>import smartnet</import>
-  <make>smartnet.crc($queue)</make>
+  <make>smartnet.crc()</make>
   <sink>
     <name>in</name>
     <type>byte</type>
