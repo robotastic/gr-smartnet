@@ -4,11 +4,6 @@
   <category>SMARTNET</category>
   <import>import smartnet</import>
   <make>smartnet.crc($queue)</make>
-  <param>
-    <name>Queue</name>
-    <key>queue</key>
-    <type>raw</type>
-  </param>
   <sink>
     <name>in</name>
     <type>byte</type>
