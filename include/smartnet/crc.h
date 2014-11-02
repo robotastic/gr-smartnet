@@ -24,7 +24,9 @@
 
 #include <smartnet/api.h>
 #include <gnuradio/block.h>
-
+#include <gnuradio/sync_block.h>
+#include <gnuradio/msg_queue.h>
+ 
 namespace gr {
   namespace smartnet {
 

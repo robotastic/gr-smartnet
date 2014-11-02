@@ -21,8 +21,7 @@
 #ifndef INCLUDED_SMARTNET_CRC_IMPL_H
 #define INCLUDED_SMARTNET_CRC_IMPL_H
 
-#include <gnuradio/sync_block.h>
-#include <gnuradio/msg_queue.h>
+
 
 #include <smartnet/crc.h>
 
