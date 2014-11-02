@@ -184,7 +184,7 @@ static smartnet_packet parse(const char *in) {
       if(1)//VERBOSE)
       //parse the message into readable chunks
       smartnet_packet pkt = parse(databits);
-          std::cout << "CRC OK" <<  << pkt.address << "," << pkt.groupflag << "," << pkt.command << std::endl;
+          std::cout << "CRC OK" <<  pkt.address << "," << pkt.groupflag << "," << pkt.command << std::endl;
   
 /*
       //and throw it at the msgq
